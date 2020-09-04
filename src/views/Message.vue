@@ -1,6 +1,6 @@
 <template>
   <div id="message">
-    <h2>Message</h2>
+    <h2 class="subheading">Message</h2>
   </div>
 </template>
 <script>

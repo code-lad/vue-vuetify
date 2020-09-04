@@ -2,7 +2,9 @@
   <v-app id="app">
     <v-main>
       <Navbar />
-      <router-view></router-view>
+      <div class="mx-4 mb-4">
+        <router-view></router-view>
+      </div>
     </v-main>
   </v-app>
 </template>

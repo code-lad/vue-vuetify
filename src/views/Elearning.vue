@@ -1,6 +1,6 @@
 <template>
   <div id="elearning">
-    <h2>E-Learning</h2>
+    <h2 class="subheading" color="heading">E-Learning</h2>
   </div>
 </template>
 <script>
