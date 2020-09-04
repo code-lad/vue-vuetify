@@ -14,13 +14,19 @@
         </v-btn>
       </v-toolbar>
 
-      <v-navigation-drawer width="400" app color="indigo" v-model="drawer">
+      <v-navigation-drawer app color="primary" v-model="drawer">
         <v-list>
-          <v-list-title>
-            <v-list-title-content>
-              <v-list-title>Dashboard</v-list-title>
-            </v-list-title-content>
-          </v-list-title>
+          <v-subheader>Sea View Primary Scool</v-subheader>
+          <v-list-item-group>
+            <v-list-item v-for="link in links" :key="link.link" router :to="link.router">
+              <v-list-item-icon>
+                <v-icon>{{link.icon}}</v-icon>
+              </v-list-item-icon>
+              <v-list-tile-content>
+                <v-list-item-title>{{link.link}}</v-list-item-title>
+              </v-list-tile-content>
+            </v-list-item>
+          </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
     </nav>
@@ -31,6 +37,16 @@ export default {
   data() {
     return {
       drawer: false,
+      links: [
+        { icon: "mdi-view-dashboard", link: "Dashboard", router: "/" },
+        { icon: "mdi-account-details", link: "About", router: "/about" },
+        {
+          icon: "mdi-folder-download",
+          link: "E-learning",
+          router: "routeLink",
+        },
+        { icon: "mdi-android-messages", link: "Message", router: "routeLink" },
+      ],
     };
   },
 };

@@ -4,6 +4,7 @@ import Vuetify from "vuetify/lib";
 Vue.use(Vuetify, {
   iconfont: "md",
   theme: {
+    drawer: "aliceblue",
     white: "#ffffff",
     primary: "#9652ff",
     success: "#3cd1c2",
