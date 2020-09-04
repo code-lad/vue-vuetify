@@ -43,9 +43,9 @@ export default {
         {
           icon: "mdi-folder-download",
           link: "E-learning",
-          router: "routeLink",
+          router: "/elearning",
         },
-        { icon: "mdi-android-messages", link: "Message", router: "routeLink" },
+        { icon: "mdi-android-messages", link: "Message", router: "/message" },
       ],
     };
   },
